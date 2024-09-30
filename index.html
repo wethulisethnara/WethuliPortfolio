@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wethuli's Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Wethuli Sethnara</div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="loadContent('home')">Home</a></li>
+                <li><a href="#" onclick="loadContent('about')">About</a></li>
+                <li><a href="#" onclick="loadContent('work')">Work</a></li>
+                <li><a href="#" onclick="loadContent('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="content" class="welcome-section">
+        <img src="images/welcome-photo.jpg" alt="Welcome Image" class="welcome-image" />
+        <div class="welcome-text">
+            <h1>Hi! I'm Wethuli Sethnara!</h1>
+            <p>I'm 18 years old. Currently a student at LNBTI University. I'm interested in software developing and web designing.</p>
+            <button class="cta-button" onclick="loadContent('about')">Discover More</button>
+        </div>
+    </div>
+
+    <!-- Hidden Templates for Each Section -->
+    <template id="about-template">
+        <div class="about-section">
+            <img src="images/about.jpg" alt="About Me Photo" class="about-image" />
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>
+                    Hello! I'm currently pursuing a BSc (Honours) in Computing (Information Systems), where I am diving deep into the world of technology and software development. My goal is to follow a career path in software engineering in Japan, a country renowned for its innovation and technological advancements.
+                </p>
+                <p>
+                    In addition to my academic pursuits, I have a diverse set of interests that fuel my passion for creativity and technology. I am particularly drawn to web development, where I enjoy creating dynamic and user-friendly websites. I also have a keen interest in video and photo editing, enabling me to express my artistic side and bring visual stories to life.
+                </p>
+            </div>
+        </div>
+    </template>
+
+    <template id="work-template">
+        <div class="work-section">
+            <h1>My Work</h1>
+            <p>Here are some of the projects I have worked on.</p>
+
+            <div class="work-container">
+                <div class="work-item">
+                    <h2>Arduino based digital ruler</h2>
+
+                    <div class="work-content-container">
+                        <img src="images/work-sample1.jpg" alt="Work Sample 1" class="work-image">
+                        <div>
+                        <p>This ruler is specifically made to measure the distance between the object in the front of it and the ruler.</p>
+                        <p>It lights up the red LED if the distance is 40 cm or less and lights up the blue LED if the distance is more than 40 cm.</p>
+                        <p>It helps to understand the distances between the object in the front and the sensor while offering the outputs in a user-friendly manner on the digital display.</p>
+                    </div>
+                        </div>
+
+                </div>
+
+                <div class="work-item">
+                    <h2>Arduino based obstacle avoidance robot</h2>
+
+                    <div class="work-content-container">
+                        <img src="images/work-sample2.jpg" alt="Work Sample 2" class="work-image">
+                        <p>This project showcases a robot built using Arduino that avoids obstacles autonomously.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="contact-template">
+        <div class="contact-container">
+            <h1>Contact Me</h1>
+
+            <form onsubmit="sendEmail(event)">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <p>Or you can reach me via</p>
+
+            <div class="social-links">
+                <a href="mailto:wethulisethnara@gmail.com" title="Email">
+                    <i class="fas fa-envelope social-icon"></i>
+                </a>
+                <a href="https://wa.me/+94777047321" title="WhatsApp">
+                    <i class="fab fa-whatsapp social-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/wethuli-sethnara-85b8272b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title="LinkedIn">
+                    <i class="fab fa-linkedin social-icon"></i>
+                </a>
+                <!--<a href="https://www.instagram.com/yourinstagramprofile" title="Instagram">
+                    <i class="fab fa-instagram social-icon"></i>
+                </a>-->
+            </div>
+        </div>
+    </template>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Wethuli Sethnara. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

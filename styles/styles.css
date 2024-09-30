@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('../images/home-bg.jpg'); /* Update with your image path */
+    background-size: cover; /* Ensures the background covers the entire area */
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: black;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #0f1010;
+    padding: 15px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+    .nav-links li {
+        display: inline;
+    }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+#content {
+    margin: 20px;
+}
+
+footer {
+    background-color: #0f1010;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    padding: 40px;
+    background-size: cover;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.welcome-image {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin-right: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.about-image {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin-right: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.welcome-text {
+    width: 50%;
+    max-width: 500px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.welcome-text h1 {
+        color: #5c060d;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+.welcome-text p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+.about-text {
+    width: 50%;
+    max-width: 500px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.about-text h1 {
+        color: #5c060d;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+.about-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: black;
+        }
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #f4a261;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+    .cta-button:hover {
+        background-color: #e76f51;
+    }
+
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    margin: 0 auto; /* Center container */
+}
+
+    .contact-container p {
+        color: black;
+    }
+
+    .social-links {
+        display: flex; /* Align icons horizontally */
+        gap: 20px; /* Space between icons */
+        margin: 10px 0; /* Margin above and below the links */
+    }
+
+.social-icon {
+    font-size: 30px; /* Set icon size */
+    color: #1a5ac9; /* Icon color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+    .social-icon:hover {
+        color: #4CAF50; /* Change color on hover */
+    }
+
+/* Your existing form styles */
+form {
+    width: 400px;
+    margin: 10px; /* Add margin above and below the form */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #3e8e41;
+    }
+
+.work-section {
+    display: flex;
+    flex-direction: column; /* Stack the work items vertically */
+    align-items: center;
+}
+
+.work-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column; /* Stack the work items vertically */
+    gap: 20px; /* Adds space between work items */
+    height: 400px; /* Set a fixed height for the container */
+    overflow-y: auto; /* Enable vertical scrolling if the content exceeds the height */
+    padding-right: 10px; /* Optional: Add padding for better scrolling experience */
+    align-items: center;
+}
+
+.work-item {
+    width: 95%; /* Adjust to fill available space */
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+    .work-item h2 {
+        width: 100%;
+        font-size: 1.5rem;
+        color: black;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+.work-content-container {
+    display: flex; /* Flexbox to create two columns */
+    justify-content: flex-start; /* Ensure space between the image and text */
+    align-items: self-start;
+}
+
+.work-image {
+    width: 20%; /* Image takes 50% of the content container */
+    height: auto;
+    max-width: 200px; /* Ensure a maximum width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.work-content-container p {
+    width: 98%; /* Text takes the remaining 45% */
+    font-size: 1rem;
+    color: black;
+    text-align: justify;
+    margin-left: 20px; /* Adds some space between image and text */
+}
